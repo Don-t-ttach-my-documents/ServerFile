@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  server:
+    build: ./server/
+    volumes:
+      - ./server/doc:/app/doc
+    ports:
+      - "3200:3200"
